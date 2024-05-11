@@ -1,0 +1,20 @@
+#puzziegrid {
+	display: grid;
+	--no-rows: 5;
+	--no-columns: 5;
+	grid-template-columns: repeat(var(--no-columns), 20px);
+	grid-template-rows: repeat(var(--no-rows), 20px);
+	grid-gap: 0px;
+}
+
+.cell {
+	width: 20px;
+	height: 20px;
+	background-color= white;
+	border: 1px solid black;
+//	border-left: 1px solid white;
+//	border-right: 1px solid black;
+//	border-top: 1px solid black;
+//	border-bottom: 1px solid white;
+	cursor: pointer;
+}
